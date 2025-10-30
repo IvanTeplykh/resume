@@ -1,17 +1,42 @@
+.header-information {
+    display: flex;
+}
 .photo {
     border-radius: 32px;
     box-sizing: border-box;
-}
+    margin-top: 34px;
+    margin-left: 34px;
+   }
+.nav {
+    background-color: bisque;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 12px 24px 12px 24px;
+    }
 .nav a {
     color: rgb(35, 35, 35);
     margin-left: 24px;
     background-color: rgb(215, 250, 250);
     border-radius: 5px;
+    border: 2px solid rgb(215, 250, 250);
+    cursor: pointer;
+    }
+.nav a:hover,.nav a:focus {
+    background-color: rgb(223, 241, 241);
+    border: 2px solid rgb(88, 134, 134);
 }
-.jobs > li {
-    color: rgb(78, 78, 78);
+.nav a:active {
+    background-color: rgb(252, 157, 157);
+    border: 2px solid rgba(252, 157, 157, 0.507);
+}
+.jobs  li {
     background-color: beige;
 }
-.jobs-exempl {
-    color: red;
+.name-info {
+    box-sizing: border-box;
+    width: 300px;
+            
+}
+address {
+    line-height: 1.5;
 }
