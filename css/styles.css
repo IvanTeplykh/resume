@@ -55,3 +55,51 @@ address {
 .jobs  li {
     background-color: beige;
 }
+.university_logo {
+    height: 40px;
+    padding: 4px;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+.university_logo:hover{
+    background-color: rgb(155, 253, 209);
+    padding: 4px;
+    height: 40px;
+    border: 3px solid rgb(64, 145, 108);
+}
+.beltimport {
+    display: flex;
+}    
+.Beltimport_Logo {
+    background-color: rgb(110, 104, 104);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 4px;
+    margin-left: 34px;
+}
+.Beltimport_Logo:hover {
+    background-color: rgb(100, 81, 81);
+    border: 3px solid rgb(136, 22, 51);
+}
+.adept-group {
+    display: flex;
+}
+.adept-group-logo {
+    border-radius: 10px;
+    margin-left: 34px;
+    
+}
+.adept-group-logo:hover {
+    border: 3px solid rgb(9, 75, 47);
+    box-sizing: border-box;
+}
+.zeo {
+    display: flex;
+}
+.zeo-logo {
+    margin-left: 34px;
+    border-radius: 10px;
+}
+.zeo-logo:hover {
+    border: 3px solid rgb( 255, 218, 34);
+    box-sizing: border-box;
+}
