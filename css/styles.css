@@ -1,18 +1,16 @@
+body {
+    font-family: 'Montserrat';
+    background-color: antiquewhite;
+}
 .header-information {
     display: flex;
 }
-.photo {
-    border-radius: 32px;
-    box-sizing: border-box;
-    margin-top: 34px;
-    margin-left: 34px;
-   }
 .nav {
     background-color: bisque;
     margin: auto;
     box-sizing: border-box;
     padding: 12px 24px 12px 24px;
-    }
+}
 .nav a {
     color: rgb(35, 35, 35);
     margin-left: 24px;
@@ -20,23 +18,40 @@
     border-radius: 5px;
     border: 2px solid rgb(215, 250, 250);
     cursor: pointer;
-    }
+    font-style: italic;
+    font-family: 'Noto+Serif';
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 1px black;
+}
 .nav a:hover,.nav a:focus {
     background-color: rgb(223, 241, 241);
     border: 2px solid rgb(88, 134, 134);
+    
 }
 .nav a:active {
     background-color: rgb(252, 157, 157);
     border: 2px solid rgba(252, 157, 157, 0.507);
 }
-.jobs  li {
-    background-color: beige;
-}
 .name-info {
     box-sizing: border-box;
-    width: 300px;
-            
+    background-color: beige;
+    text-align: center;
 }
+.photo {
+    border-radius: 32px;
+    box-sizing: border-box;
+    margin-top: 34px;
+    margin-left: 34px;
+    margin-right: 34px;
+   }
 address {
     line-height: 1.5;
+}
+.address-tell:hover, .address-mail:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: red;
+}
+.jobs  li {
+    background-color: beige;
 }
