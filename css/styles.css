@@ -1,18 +1,36 @@
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
 body {
+    margin-left: 0;
+    margin-right: 0;
     font-family: 'Montserrat';
-    background-color: antiquewhite;
+    background-color: rgb(255, 251, 248);
+    color: rgb(64, 64, 64);
+    display: block;
+}
+h2 {
+    color: rgb(87, 113, 136)
+}
+.header {
+    margin-bottom: 34px;
 }
 .header-information {
     display: flex;
 }
+.header h2 {
+    color: rgb(87, 113, 136);
+}
 .nav {
-    background-color: bisque;
     margin: auto;
-    box-sizing: border-box;
     padding: 12px 24px 12px 24px;
+    width: 100%;
+    background-color: rgb(75, 92, 107);
 }
 .nav a {
-    color: rgb(35, 35, 35);
+    color: rgb(39, 39, 46);
     margin-left: 24px;
     background-color: rgb(215, 250, 250);
     border-radius: 5px;
@@ -34,8 +52,7 @@ body {
 }
 .name-info {
     box-sizing: border-box;
-    background-color: beige;
-    text-align: center;
+    text-align: left;
 }
 .photo {
     border-radius: 32px;
@@ -52,19 +69,25 @@ address {
     text-decoration: none;
     color: red;
 }
-.jobs  li {
-    background-color: beige;
+#ОБРАЗОВАНИЕ {
+    border-top: 5px solid rgb(87, 113, 136);
+    margin-bottom: 34px;
 }
 .university_logo {
-    height: 40px;
+    height: 64px;
     padding: 4px;
-    border: 3px solid rgba(0, 0, 0, 0);
 }
 .university_logo:hover{
     background-color: rgb(155, 253, 209);
     padding: 4px;
-    height: 40px;
     border: 3px solid rgb(64, 145, 108);
+}
+#ОПЫТ_РАБОТЫ {
+    border-top: 5px solid rgb(87, 113, 136);
+    margin-bottom: 34px;
+}
+.jobs  li {
+    font-size: 16px;
 }
 .beltimport {
     display: flex;
@@ -102,4 +125,26 @@ address {
 .zeo-logo:hover {
     border: 3px solid rgb( 255, 218, 34);
     box-sizing: border-box;
+}
+#ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ {
+    border-top: 5px solid rgb(87, 113, 136);
+    margin-bottom: 34px;
+}
+#ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ {
+    border-top: 5px solid rgb(87, 113, 136);
+    margin-bottom: 34px;
+}
+#ЛИЧНЫЕ_КАЧЕСТВА {
+    border-top: 5px solid rgb(87, 113, 136);
+    margin-bottom: 34px;
+}
+#ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ {
+    border-top: 5px solid rgb(87, 113, 136);
+    margin-bottom: 34px;
+}
+#СОЦИАЛЬНЫЕ_СЕТИ {
+    background-color: rgb(87, 113, 136);
+}
+#СОЦИАЛЬНЫЕ_СЕТИ a {
+    padding: 24px 14px;
 }
