@@ -30,16 +30,17 @@ h2 {
     background-color: rgb(75, 92, 107);
 }
 .nav a {
+    justify-content: space-between;
     color: rgb(39, 39, 46);
+    padding: 4px;
     margin-left: 24px;
     background-color: rgb(215, 250, 250);
     border-radius: 5px;
     border: 2px solid rgb(215, 250, 250);
     cursor: pointer;
     font-style: italic;
-    font-family: 'Noto+Serif';
     text-decoration: none;
-    text-shadow: 0.5px 0.5px 1px black;
+    text-shadow: 0.5px 0.5px 1px rgb(39, 39, 46);
 }
 .nav a:hover,.nav a:focus {
     background-color: rgb(223, 241, 241);
@@ -73,6 +74,9 @@ address {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+.ed_div {
+    margin-left: 24px;
+}
 .university_logo {
     height: 64px;
     padding: 4px;
@@ -85,6 +89,9 @@ address {
 #ОПЫТ_РАБОТЫ {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
+}
+.jobs_div {
+    margin-left: 24px;
 }
 .jobs  li {
     font-size: 16px;
@@ -130,17 +137,22 @@ address {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
-#ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ {
-    border-top: 5px solid rgb(87, 113, 136);
-    margin-bottom: 34px;
+.profesional_div {
+    margin-left: 24px;
 }
 #ЛИЧНЫЕ_КАЧЕСТВА {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+.personal_div {
+    margin-left: 24px;
+}
 #ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
+}
+.infor_div {
+    margin-left: 24px;
 }
 #СОЦИАЛЬНЫЕ_СЕТИ {
     background-color: rgb(87, 113, 136);
