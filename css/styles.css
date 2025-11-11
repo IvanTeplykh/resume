@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: 'Montserrat' sans-serif;
@@ -11,12 +12,17 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 main {
     flex-grow: 1;
 }
+
 h2 {
     color: rgb(87, 113, 136)
 }
+
+/*END OF GLOBAL RULES*/
+
 .header-information {
     display: flex;
     align-items: center;
@@ -27,14 +33,17 @@ h2 {
     background-size: cover;
     width: 100%;
 }
+
 .header h1 {
     margin: 0;
 }
+
 .header h2 {
     color: rgb(87, 113, 136);
     margin: 0;
     margin-top: 12px;
 }
+
 .nav {
     display: flex;
     gap: 18px;
@@ -44,6 +53,7 @@ h2 {
     width: 100%;
     background-color: rgb(75, 92, 107);
 }
+
 .nav a {
     flex-shrink: 0;
     color: rgb(39, 39, 46);
@@ -56,15 +66,18 @@ h2 {
     text-decoration: none;
     text-shadow: 0.5px 0.5px 1px rgb(39, 39, 46);
 }
+
 .nav a:hover,.nav a:focus {
     background-color: rgb(223, 241, 241);
     border: 2px solid rgb(88, 134, 134);
     
 }
+
 .nav a:active {
     background-color: rgb(252, 157, 157);
     border: 2px solid rgba(252, 157, 157, 0.507);
 }
+
 .name-info {
     text-align: left;
     background-color: rgb(255, 251, 248);
@@ -73,6 +86,22 @@ h2 {
     border-radius: 12px;
     margin-left: 64px;
 }
+
+.name-info h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.name-info h2::after,  .name-info h2::before {
+    content: "";
+    background-color: rgb(87, 113, 136);
+    width: 36px;
+    height: 2px;
+}
+
 .photo {
     border-radius: 32px;
     border: 2px solid rgb(87, 113, 136);
@@ -81,41 +110,77 @@ h2 {
     margin: 32px 0px 32px 32px;
     max-width: 100%;
    }
+
 address {
     line-height: 1.5;
     margin-top: 12px;
 }
+
 .address-tell:hover, .address-mail:hover {
     text-transform: uppercase;
     text-decoration: none;
     color: red;
 }
+
+/*END OF HEADER*/
+
 #ОБРАЗОВАНИЕ {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+
 .ed_div {
-    margin-left: 24px;
+    margin: 24px;
 }
+
+.ed_div h2, .ed_div h3, .ed_div p {
+    margin: 0 0 12px 0;
+}
+
 .university_logo {
     height: 64px;
     padding: 4px;
 }
+
 .university_logo:hover{
     background-color: rgb(240, 255, 248);
     padding: 4px;
     border: 3px solid rgb(64, 145, 108);
 }
+
 #ОПЫТ_РАБОТЫ {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+
 .jobs_div {
     margin-left: 24px;
 }
-.jobs  li {
-    font-size: 16px;
+
+.jobs_div h2 {
+    margin-top: 24px;
+    margin-bottom: 24px; 
 }
+
+.jobs> li:not(:last-child) {
+    font-size: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgb(87, 113, 136);
+}
+
+.jobs h3 {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.jobs p {
+    margin: 0;
+}
+
+.jobs li ul {
+    margin-bottom: 8px;
+}
+
 .beltimport {
     display: flex;
 }    
@@ -184,7 +249,6 @@ footer {
     display: flex;
     justify-content: left;
     align-items: center;
-    gap: 20px;
     padding: 4px 0;
     background-color: rgb(87, 113, 136);
 }
