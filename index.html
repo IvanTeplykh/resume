@@ -1,177 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-</head>
-<body>
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-      <nav class="nav">
-        <a href="#ОБРАЗОВАНИЕ">ОБРАЗОВАНИЕ</a>
-        <a href="#ОПЫТ_РАБОТЫ">ОПЫТ РАБОТЫ</a>
-        <a href="#ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ">ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</a>
-        <a href="#ЛИЧНЫЕ_КАЧЕСТВА">ЛИЧНЫЕ КАЧЕСТВА</a>
-        <a href="#ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
-        <a href="#СОЦИАЛЬНЫЕ_СЕТИ">СОЦИАЛЬНЫЕ СЕТИ</a>
-      </nav> 
-      <div class="header-information">
-        <img src="./images/IMG_20190201_131208.jpg" alt="Photo" width="364" class="photo">
-        <div class="name-info">
-         <h1>Теплых Иван Владимирович</h1>
-         <h2>Инженер-технолог</h2>
-          <address>
-          Образование: Высшее<br />
-          Дата рождения: 22.09.1996<br />
-          Город: Одесса<br />
-          Телефон: <a href="tel:+380965502667" class="address-tell">+380 96 55 02 667</a><br />
-          Email: <a href="mailto:IvanTieplih@gmail.com" class="address-mail">IvanTieplih@gmail.com</a>
-          </address>
-        </div>
+      <div class="navigation">
+        <nav class="nav">
+          <a href="#ОБРАЗОВАНИЕ">ОБРАЗОВАНИЕ</a>
+          <a href="#ОПЫТ_РАБОТЫ">ОПЫТ РАБОТЫ</a>
+          <a href="#ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ">ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</a>
+          <a href="#ЛИЧНЫЕ_КАЧЕСТВА">ЛИЧНЫЕ КАЧЕСТВА</a>
+          <a href="#ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</a>
+          <a href="#СОЦИАЛЬНЫЕ_СЕТИ">СОЦИАЛЬНЫЕ СЕТИ</a>
+        </nav>
       </div>
     </header>
 
     <main>
-<!--ОБРАЗОВАНИЕ-->
-        <section id="ОБРАЗОВАНИЕ">
-            <div class="ed_div">
-            <h2>ОБРАЗОВАНИЕ</h2>
-            <h3>ТЕХНОЛОГ “ХРАНЕНИЕ И ПЕРЕРАБОТКА ЗЕРНОВЫХ”</h3>
-            <p>Дата окончания: 2019-Магистр, дневная форма
-            ТЗиЗБ, ОНАПТ/ОНТУ, Одесса
-            </p>
-            <a href="https://ontu.edu.ua/" target="_blank">
-            <img src="images/logo_short_en.png" alt="university logo" class="university_logo">
-            </a>
-            </div>
-        </section>
-<!--ОПЫТ РАБОТЫ-->
-        <section id="ОПЫТ_РАБОТЫ">
+      <section id="Info">
+        <div class="information">
+          <img
+            src="./images/IMG_20190201_131208.jpg"
+            alt="Photo"
+            width="240"
+            class="photo"
+          />
+          <div class="name-info">
+            <h1>Теплых Иван Владимирович</h1>
+            <h2>Инженер-технолог</h2>
+            <address>
+              Образование: Высшее<br />
+              Дата рождения: 22.09.1996<br />
+              Город: Одесса<br />
+              Телефон:
+              <a href="tel:+380965502667" class="address-tell"
+                >+380 96 55 02 667</a
+              ><br />
+              Email:
+              <a href="mailto:IvanTieplih@gmail.com" class="address-mail"
+                >IvanTieplih@gmail.com</a
+              >
+            </address>
+          </div>
+        </div>
+      </section>
+      <!--ОБРАЗОВАНИЕ-->
+      <section id="ОБРАЗОВАНИЕ">
+        <div class="ed_div">
+          <h2>ОБРАЗОВАНИЕ</h2>
+          <h3>ТЕХНОЛОГ “ХРАНЕНИЕ И ПЕРЕРАБОТКА ЗЕРНОВЫХ”</h3>
+          <p>
+            Дата окончания: 2019-Магистр, дневная форма ТЗиЗБ, ОНАПТ/ОНТУ,
+            Одесса
+          </p>
+          <a href="https://ontu.edu.ua/" target="_blank">
+            <img
+              src="images/logo_short_en.png"
+              alt="university logo"
+              class="university_logo"
+            />
+          </a>
+        </div>
+      </section>
+      <!--ОПЫТ РАБОТЫ-->
+      <section id="ОПЫТ_РАБОТЫ">
         <div class="jobs_div">
-        <h2>ОПЫТ РАБОТЫ</h2>
-        <ul class="jobs">
+          <h2>ОПЫТ РАБОТЫ</h2>
+          <ul class="jobs">
             <li>
-               <p>11/21 – 10/25</p>
-               <h3>АУТСОРС ПРОЕКТИРОВАНИЕ ПРОМЫШЛЕНО ГРАЖДАНСКОЕ НАПРАВЛЕНИЕ, ОДЕССА</h3>
-               <ul class="autworck">
+              <p>11/21 – 10/25</p>
+              <h3>
+                АУТСОРС ПРОЕКТИРОВАНИЕ ПРОМЫШЛЕНО ГРАЖДАНСКОЕ НАПРАВЛЕНИЕ,
+                ОДЕССА
+              </h3>
+              <ul class="autworck">
                 <li>Разработка проектной документации</li>
                 <li>Проработка общих архитектурных решений</li>
                 <li>Составление спецификаций</li>
                 <li>Отрисовка чертежей на основе обмерных данных</li>
-               </ul>
+              </ul>
             </li>
             <li>
-               <p>05/21 – 09/21</p>
-               <div class="beltimport">
-                 <h3>МЕНЕДЖЕР ПО РАБОТЕ С КЛЮЧЕВЫМИ КЛИЕНТАМИ / ТОВ “БЕЛТИМПОРТ”, ОДЕССА</h3>
-                 <a href="https://beltimport.ua/" target="_blank" class="beltimport_Logo_shift">
-                     <img src="images/Beltimport_Logo.webp" alt="beltimport logo" width="64" class="Beltimport_Logo">
-                 </a>
-               </div>
-               <p>Должностные обязанности:</p>
-               <ul class="jobs-exempl">
-                  <li>Работа с определённым перечнем ключевых клиентов</li>
-                  <li>Поиск новых клиентов</li>
-                  <li>Развитие брендов на рынке</li>
-               </ul>
-            </li>
-            <li>
-               <p>08/19 – 05/21 ; 09/21 – 11/21</p>
-               <div class="adept-group"> 
-               <h3>ИНЖЕНЕР-ТЕХНОЛОГ КОММЕРЧЕСКОЙ СЛУЖБЫ / ОРГАНИЗАЦИЯ, ООО “АДЕПТ-ПРОМСИСТЕМЫ” (ADEPTGROUP), ОДЕССА</h3>
-                <a href="http://www.adept-group.biz/" target="_blank">
-                    <img src="images/adept-group-23843.jpg" alt="adept-group-logo" class="adept-group-logo" width="64">
+              <p>05/21 – 09/21</p>
+              <div class="beltimport">
+                <h3>
+                  МЕНЕДЖЕР ПО РАБОТЕ С КЛЮЧЕВЫМИ КЛИЕНТАМИ / ТОВ “БЕЛТИМПОРТ”,
+                  ОДЕССА
+                </h3>
+                <a
+                  href="https://beltimport.ua/"
+                  target="_blank"
+                  class="beltimport_Logo_shift"
+                >
+                  <img
+                    src="images/Beltimport_Logo.webp"
+                    alt="beltimport logo"
+                    width="64"
+                    class="Beltimport_Logo"
+                  />
                 </a>
-               </div>
-               <p>Должностные обязанности:</p>
-               <ul class="jobs-exempl">
-                  <li>Разработка технологических схем и планов</li>
-                  <li>Технологическое сопровождение проектов</li>
-                  <li>Консультации клиентов и продающих менеджеров</li>
-                  <li>Аудит технологий, сравнительный анализ оборудования</li>
-                  <li>Формирование ТЗ на основе пожеланий заказчика</li>
-               </ul>
+              </div>
+              <p>Должностные обязанности:</p>
+              <ul class="jobs-exempl">
+                <li>Работа с определённым перечнем ключевых клиентов</li>
+                <li>Поиск новых клиентов</li>
+                <li>Развитие брендов на рынке</li>
+              </ul>
             </li>
             <li>
-               <p>05/18 – 07/19</p>
-               <div class="zeo">
-               <h3>ИНЖЕНЕР-ТЕХНОЛОГ / ООО “ЗЕРНОВАЯ СТОЛИЦА”, ОДЕССА</h3>
-               <a href="https://zeo.ua/en" target="_blank">
-               <img src="images/zeo_logo_2.png" alt="zeo-logo" class="zeo-logo" height="64">
-               </a>
-               </div>
-               <p>Должностные обязанности:</p>
-               <ul class="jobs-exempl">
-                  <li>Выполнение проектного раздела: ТХ</li>
-                  <li>Выдача заданий смежным отделам</li>
-                  <li>Оформление проектной документации</li>
-               </ul>
+              <p>08/19 – 05/21 ; 09/21 – 11/21</p>
+              <div class="adept-group">
+                <h3>
+                  ИНЖЕНЕР-ТЕХНОЛОГ КОММЕРЧЕСКОЙ СЛУЖБЫ / ОРГАНИЗАЦИЯ, ООО
+                  “АДЕПТ-ПРОМСИСТЕМЫ” (ADEPTGROUP), ОДЕССА
+                </h3>
+                <a href="http://www.adept-group.biz/" target="_blank">
+                  <img
+                    src="images/adept-group-23843.jpg"
+                    alt="adept-group-logo"
+                    class="adept-group-logo"
+                    width="64"
+                  />
+                </a>
+              </div>
+              <p>Должностные обязанности:</p>
+              <ul class="jobs-exempl">
+                <li>Разработка технологических схем и планов</li>
+                <li>Технологическое сопровождение проектов</li>
+                <li>Консультации клиентов и продающих менеджеров</li>
+                <li>Аудит технологий, сравнительный анализ оборудования</li>
+                <li>Формирование ТЗ на основе пожеланий заказчика</li>
+              </ul>
             </li>
-        </ul>
+            <li>
+              <p>05/18 – 07/19</p>
+              <div class="zeo">
+                <h3>ИНЖЕНЕР-ТЕХНОЛОГ / ООО “ЗЕРНОВАЯ СТОЛИЦА”, ОДЕССА</h3>
+                <a href="https://zeo.ua/en" target="_blank">
+                  <img
+                    src="images/zeo_logo_2.png"
+                    alt="zeo-logo"
+                    class="zeo-logo"
+                    height="64"
+                  />
+                </a>
+              </div>
+              <p>Должностные обязанности:</p>
+              <ul class="jobs-exempl">
+                <li>Выполнение проектного раздела: ТХ</li>
+                <li>Выдача заданий смежным отделам</li>
+                <li>Оформление проектной документации</li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        </section>
-<!--ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ-->
-        <section id="ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ">
-            <div class="profesional_div">
-            <h2>ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</h2>
-            <ul>
-                <li>Технологии зерновой промышленности</li>
-                <li>Программы семейства Autodesk : AutoCAD, Revit</li>
-                <li>Создание “семейств” Revit</li>
-                <li>Ведение проектов Revit</li>
-                <li>Программы семейства Microsoft Office: Word, Excel …</li>
-                <li>1C</li>
-                <li>Формирования ТЗ</li>
-                <li>Разработка решений по размещению оборудования на планах</li>
-                <li>Разработка общих архитектурных решений</li>
-            </ul>
-            </div>
-        </section>
-<!--ЛИЧНЫЕ КАЧЕСТВА-->
-        <section id="ЛИЧНЫЕ_КАЧЕСТВА">
-            <div class="personal_div">
-            <h2>ЛИЧНЫЕ КАЧЕСТВА</h2>
-            <ul>
-                <li>Английский язык – выше среднего</li>
-                <li>Талант к технике</li>
-                <li>Быстрая обучаемость</li>
-                <li>Легко осваиваю новые технологии</li>
-                <li>Усидчивый</li>
-                <li>Внимательный к деталям</li>
-            </ul>
-            </div>
-        </section>
-<!--ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ-->
-        <section id="ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ">
-            <div class="infor_div">
-            <h2>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h2>
-            <ul>
-                <li>Водительское удостоверение: категория ( В ) - 2015год.</li>
-                <li>Изучаю языки</li>
-                <li>Изучаю програмирование</li>
-            </ul>
-            </div>
-        </section>
+      </section>
+      <!--ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ-->
+      <section id="ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ">
+        <div class="profesional_div">
+          <h2>ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ</h2>
+          <ul>
+            <li>Технологии зерновой промышленности</li>
+            <li>Программы семейства Autodesk : AutoCAD, Revit</li>
+            <li>Создание “семейств” Revit</li>
+            <li>Ведение проектов Revit</li>
+            <li>Программы семейства Microsoft Office: Word, Excel …</li>
+            <li>1C</li>
+            <li>Формирования ТЗ</li>
+            <li>Разработка решений по размещению оборудования на планах</li>
+            <li>Разработка общих архитектурных решений</li>
+          </ul>
+        </div>
+      </section>
+      <!--ЛИЧНЫЕ КАЧЕСТВА-->
+      <section id="ЛИЧНЫЕ_КАЧЕСТВА">
+        <div class="personal_div">
+          <h2>ЛИЧНЫЕ КАЧЕСТВА</h2>
+          <ul>
+            <li>Английский язык – выше среднего</li>
+            <li>Талант к технике</li>
+            <li>Быстрая обучаемость</li>
+            <li>Легко осваиваю новые технологии</li>
+            <li>Усидчивый</li>
+            <li>Внимательный к деталям</li>
+          </ul>
+        </div>
+      </section>
+      <!--ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ-->
+      <section id="ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ">
+        <div class="infor_div">
+          <h2>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h2>
+          <ul>
+            <li>Водительское удостоверение: категория ( В ) - 2015год.</li>
+            <li>Изучаю языки</li>
+            <li>Изучаю програмирование</li>
+          </ul>
+        </div>
+      </section>
     </main>
-    
+
     <footer id="СОЦИАЛЬНЫЕ_СЕТИ">
-        <a href="https://www.instagram.com/ivantieplih/?next=%2F" target="_blank">
-            <img src="./images/ivantieplih_qr.png" alt="instagram" width="120">
+      <div class="footer_content">
+        <a
+          href="https://www.instagram.com/ivantieplih/?next=%2F"
+          target="_blank"
+        >
+          <img src="./images/ivantieplih_qr.png" alt="instagram" width="120" />
         </a>
-        <a href="https://www.facebook.com/profile.php?id=100009522373489" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="facebook logo" width="40" height="40">
+        <a
+          href="https://www.facebook.com/profile.php?id=100009522373489"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="facebook logo"
+            width="40"
+            height="40"
+          />
         </a>
-        <a href="https://www.linkedin.com/in/ivan-teplyh-371952229/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn logo" width="40" height="40">
+        <a
+          href="https://www.linkedin.com/in/ivan-teplyh-371952229/"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg"
+            alt="LinkedIn logo"
+            width="40"
+            height="40"
+          />
         </a>
+        <div class="feedback_form">
+          <form action="submit" class="feedback">
+            <label class="feedback_email_label"> Email
+              <input type="email" class="email" name="email_feedback" placeholder="*******@mail.com" required/>
+            </label>
+            <label class="feedback_text">
+              Feedback
+              <textarea
+                name="feedback_text"
+                id="feedback"
+                placeholder="Write there"
+                rows="4"
+              ></textarea>
+              <button class="feedback_button" type="submit">
+                Send Feedback
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

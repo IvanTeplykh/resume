@@ -2,6 +2,8 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -18,30 +20,31 @@ main {
 }
 
 h2 {
-    color: rgb(87, 113, 136)
+    color: rgb(87, 113, 136);
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 /*END OF GLOBAL RULES*/
 
-.header-information {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: linear-gradient(to bottom, rgba(255, 251, 248, 0.05), rgba(255, 251, 248, 0.05)), url('../images/background.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+.header {
+    background-color: rgb(75, 92, 107);
+    position: relative;
+    height: 54px;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in-out;
 }
 
-.header h1 {
-    margin: 0;
-}
-
-.header h2 {
-    color: rgb(87, 113, 136);
-    margin: 0;
-    margin-top: 12px;
+.header:hover .navigation {
+    transform: translateY(0);
 }
 
 .nav {
@@ -51,26 +54,27 @@ h2 {
     margin: auto;
     padding: 12px 24px 12px 24px;
     width: 100%;
-    background-color: rgb(75, 92, 107);
 }
 
 .nav a {
     flex-shrink: 0;
-    color: rgb(39, 39, 46);
+    color: rgb(194, 183, 183);
     padding: 4px;
-    background-color: rgb(255, 251, 248);
+    background-color: none;
     border-radius: 5px;
-    border: 2px solid rgb(75, 92, 107);
+    border: 2px solid rgba(0, 0, 0, 0);
     cursor: pointer;
     font-style: italic;
     text-decoration: none;
     text-shadow: 0.5px 0.5px 1px rgb(39, 39, 46);
+    transition: background-color 150ms linear,  border 100ms linear 150ms, transform 100ms linear;
 }
 
 .nav a:hover,.nav a:focus {
     background-color: rgb(223, 241, 241);
     border: 2px solid rgb(88, 134, 134);
-    
+    transform: scale(1.1);
+    color: rgb(87, 113, 136);
 }
 
 .nav a:active {
@@ -78,9 +82,32 @@ h2 {
     border: 2px solid rgba(252, 157, 157, 0.507);
 }
 
+/*END OF HEADER*/
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(to bottom, rgba(87, 113, 136, 0.15) , rgba(87, 113, 136, 0.15)), url('../images/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+#Info h1 {
+    margin: 0;
+}
+
+#Info h2 {
+    color: rgb(87, 113, 136);
+    margin: 0;
+    margin-top: 12px;
+}
+
 .name-info {
     text-align: left;
-    background-color: rgb(255, 251, 248);
+    background-color: rgba(255, 251, 248, 0.9);
     padding: 12px 24px;
     border: 2px solid rgb(87, 113, 136);
     border-radius: 12px;
@@ -106,7 +133,7 @@ h2 {
     border-radius: 32px;
     border: 2px solid rgb(87, 113, 136);
     box-sizing: border-box;
-    box-shadow: inset 1px 1px 2px 1px rgb(87, 113, 136), 5px 5px 16px 1.5px rgb(87, 113, 136), 10px 10px 32px 3px rgb(64, 145, 108) ;
+    box-shadow: 5px 5px 16px 1.5px rgb(87, 113, 136), 10px 10px 32px 3px rgb(64, 145, 108) ;
     margin: 32px 0px 32px 32px;
     max-width: 100%;
    }
@@ -116,13 +143,24 @@ address {
     margin-top: 12px;
 }
 
-.address-tell:hover, .address-mail:hover {
-    text-transform: uppercase;
+.address-mail, .address-tell {
+    color: rgb(76, 106, 133);
+    margin-left: 4px;
+    position: absolute;
+    font-size: 16px;
     text-decoration: none;
-    color: red;
+    transition-property: font-size, color, font-weight;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 0ms, 150ms;
 }
 
-/*END OF HEADER*/
+.address-tell:hover, .address-mail:hover {
+    color: rgb(255, 15, 15);
+    font-size: 18px;
+    font-weight: 700;
+}
+
 
 #ОБРАЗОВАНИЕ {
     border-top: 5px solid rgb(87, 113, 136);
@@ -133,18 +171,18 @@ address {
     margin: 24px;
 }
 
-.ed_div h2, .ed_div h3, .ed_div p {
+.ed_div h3, .ed_div p {
     margin: 0 0 12px 0;
 }
 
 .university_logo {
     height: 64px;
     padding: 4px;
+    transition: background-color 250ms linear, border 150ms linear 100ms;
 }
 
 .university_logo:hover{
     background-color: rgb(240, 255, 248);
-    padding: 4px;
     border: 3px solid rgb(64, 145, 108);
 }
 
@@ -159,7 +197,10 @@ address {
 
 .jobs_div h2 {
     margin-top: 24px;
-    margin-bottom: 24px; 
+    margin-bottom: 24px;
+    position: sticky; 
+    top: 0;
+    background-color: rgba(255, 251, 248, 0.9);
 }
 
 .jobs> li:not(:last-child) {
@@ -183,79 +224,139 @@ address {
 
 .beltimport {
     display: flex;
-}    
+} 
+
 .Beltimport_Logo {
-    background-color: rgb(110, 104, 104);
+    background-color: rgb(146, 136, 136);
     border-radius: 10px;
-    box-sizing: border-box;
     padding: 4px;
     margin-left: 34px;
+    border: 1px solid rgb(136, 22, 51);
+    transition: background-color 250ms linear, border 150ms linear 100ms;
 }
+
 .Beltimport_Logo:hover {
+    box-sizing: border-box;
     background-color: rgb(100, 81, 81);
     border: 3px solid rgb(136, 22, 51);
 }
+
 .adept-group {
     display: flex;
 }
+
 .adept-group-logo {
     border-radius: 10px;
     margin-left: 34px;
+    border: 1px solid rgb(9, 75, 47);
+    transition: border 150ms linear 100ms;
     
 }
+
 .adept-group-logo:hover {
     border: 3px solid rgb(9, 75, 47);
     box-sizing: border-box;
 }
+
 .zeo {
     display: flex;
 }
+
 .zeo-logo {
     margin-left: 34px;
     border-radius: 10px;
+    border: 1px solid rgb(255, 218, 34);
+    transition: border 150ms linear 100ms;
 }
+
 .zeo-logo:hover {
     border: 3px solid rgb( 255, 218, 34);
     box-sizing: border-box;
 }
+
 #ПРОФЕССИОНАЛЬНЫЕ_НАВЫКИ {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+
 .profesional_div {
     margin-left: 24px;
 }
+
 #ЛИЧНЫЕ_КАЧЕСТВА {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+
 .personal_div {
     margin-left: 24px;
 }
+
 #ДОПОЛНИТЕЛЬНАЯ_ИНФОРМАЦИЯ {
     border-top: 5px solid rgb(87, 113, 136);
     margin-bottom: 34px;
 }
+
 .infor_div {
     margin-left: 24px;
 }
+
 #СОЦИАЛЬНЫЕ_СЕТИ {
     background-color: rgb(87, 113, 136);
 }
+
 #СОЦИАЛЬНЫЕ_СЕТИ a {
     padding: 24px 14px;
 }
+
+/*END OF MAIN*/
+
 footer {
+    background-color: rgb(87, 113, 136);
+}
+
+.footer_content {
+    margin-left: 24px;
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 4px 0;
-    background-color: rgb(87, 113, 136);
-}
-footer a img {
-    transition: transform 0.3s;
 }
 
-footer a:hover img {
-    transform: scale(1.1);
+.footer_content a {
+    transition: transform 350ms ease-in-out;
+}
+
+.footer_content a:hover:first-child {
+    transform: scale(1.35);
+}
+
+.footer_content a:hover:not(:first-child) {
+    transform: scale(1.3) rotate(360deg);
+}
+
+.feedback:focus-within {
+    border: 2px dashed rgb(136, 22, 51);
+}
+
+.feedback_email_label {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback {
+    background-color: rgba(255, 251, 248, 0.9);
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.feedback_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.input::placeholder {
+    color: rgb(87, 113, 136);
+    font-weight: 500;
 }
